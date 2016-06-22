@@ -16,7 +16,7 @@ I am building a timer web application using:
 6. As a user, I see a 'tooltip' for the break button.
 7. As a user, when the break button is enabled I can click it.
 8. As a user, when I click the break button, the timer sets to 5 minutes and begins counting down.
-9. As a user, when I click the start button the text changes to 'Pause'
-10. As a user, when I click the pause button the timer stops counting down and toggles back to start
+9. As a user, I see a 'Pause' button
+10. As a user, when I click the pause button the timer stops counting down
 11. As a user, I can specify the run-time of the Timer
-12. As a user, 
+12. As a user,
