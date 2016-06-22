@@ -19,6 +19,6 @@ I am building a timer web application using:
 9. As a user, when I click the break button, the timer sets to 5 minutes.
 10. As a user, I see a 'Pause' button
 11. As a user, when I click the pause button the timer stops counting down
-12. As 
-13. As a user, I can specify the run-time of the Timer
+12. As a user, I can specify the run-time of the Timer
+13. As a user, 
 14. As a user,
