@@ -3,18 +3,22 @@ $(document).ready(function(){
   var minutes = $('#minutes');
   var seconds = $('#seconds');
   var breakBtn = $('#break');
-<<<<<<< HEAD
   var pauseBtn = $('#pause');
   var resetBtn = $('#reset');
-
-  start.on('click',startCountdown);
-=======
-  var resetBtn = $('#reset');
-  var pauseBtn = $('#pause');
 
   start.on('click',startCountdown);
   breakBtn.on('click',takeABreak);
+  pauseBtn.on('click', pauseTimer);
+  resetBtn.on('click', resetTimer);
 
+  function resetTimer(){
+    minutes.text('25');
+    seconds.text('00');
+  }
+
+  function pauseTimer(){
+
+  }
 
   function takeABreak(){
     // alert("take a break");
@@ -50,7 +54,6 @@ $(document).ready(function(){
   }
 
 
->>>>>>> startTimer
 
 
 });
