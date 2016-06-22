@@ -12,6 +12,7 @@ body{
 #timer{
   font-size: 100px;
   padding-left: 240px;
+  color: white;
 }
 
 #start{

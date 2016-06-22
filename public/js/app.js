@@ -5,6 +5,7 @@ $(document).ready(function(){
   var breakBtn = $('#break');
   var pauseBtn = $('#pause');
   var resetBtn = $('#reset');
+  var countdown;
 
   start.on('click',startCountdown);
   breakBtn.on('click',takeABreak);
@@ -14,21 +15,28 @@ $(document).ready(function(){
   function resetTimer(){
     minutes.text('25');
     seconds.text('00');
+    stopCountdown();
   }
 
   function pauseTimer(){
-
+    stopCountdown();
   }
 
   function takeABreak(){
     // alert("take a break");
     minutes.text('05');
     seconds.text('00');
-    startCountdown();
+    // startCountdown();
+    stopCountdown();
   }
 
+  function stopCountdown(){
+    clearInterval(countdown);
+  }
+
+
   function startCountdown(){
-    var countdown = setInterval(function(){
+    countdown = setInterval(function(){
       var secondsVal = +seconds.text();//the plus sign makes this behave like a number
       var minutesVal = +minutes.text();
       if (secondsVal === 0 && minutesVal === 0) {
