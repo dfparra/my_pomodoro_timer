@@ -1,0 +1,34 @@
+html{
+  background-color: #29B6F6;
+}
+
+body{
+  padding-top: 70px;
+  background-color: #29B6F6;
+
+}
+
+#timer{
+  font-size: 100px;
+  padding-left: 240px;
+}
+
+#start{
+  color: black;
+
+}
+
+#break{
+  color: black;
+
+}
+
+#pause{
+  color: black;
+
+}
+
+#reset{
+  color: black;
+
+}
