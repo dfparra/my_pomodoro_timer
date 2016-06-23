@@ -25,9 +25,12 @@ $(document).ready(function(){
   function decTimer(){
     var minutesVal = +minutes.text();
 
-    
-    minutes.text(minutesVal-1);
-
+    if(minutesVal === 0){
+      //Don't decrease
+    }
+    else{
+      minutes.text(minutesVal-1);
+    }
   }
 
   function resetTimer(){
