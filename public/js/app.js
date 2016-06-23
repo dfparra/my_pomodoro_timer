@@ -5,12 +5,30 @@ $(document).ready(function(){
   var breakBtn = $('#break');
   var pauseBtn = $('#pause');
   var resetBtn = $('#reset');
+  var plusBtn = $('#plus');
+  var minusBtn = $('#minus');
   var countdown;
 
   start.on('click',startCountdown);
   breakBtn.on('click',takeABreak);
   pauseBtn.on('click', pauseTimer);
   resetBtn.on('click', resetTimer);
+  plusBtn.on('click', incTimer);
+  minusBtn.on('click', decTimer);
+
+  function incTimer(){
+    var minutesVal = +minutes.text();
+    minutes.text(minutesVal+1);
+
+  }
+
+  function decTimer(){
+    var minutesVal = +minutes.text();
+
+    
+    minutes.text(minutesVal-1);
+
+  }
 
   function resetTimer(){
     minutes.text('25');
