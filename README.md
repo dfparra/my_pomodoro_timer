@@ -23,4 +23,3 @@ I am building a timer web application using:
 13. As a user, when I click the plus button it increments the timer by 1 minute.
 14. As a user, when I navigate to the page, I see a '-' button.
 15. As a user, when I click the minus button it decrements the timer by 1 minute.
-16. As a user, 
