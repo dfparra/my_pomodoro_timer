@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div>
+      <h1 id="timerStateText" align="center">
+        <span id="workText">Work Time</span>
+        <!-- <spand id="breakText">Break Time</spand> -->
+      </h1>
+      <!-- <p id="workText" align="center">Work Time</p>
+      <p id="breakText" >Break Time</p> -->
+  </div>
+  <!--Work/Break Timer Text-->
   <div class= "container">
     <div class="row">
 
@@ -14,13 +23,10 @@
         <h1 id="timer">
           <span id="minutes">00</span>:<span id="seconds">02</span>
         </h1>
-        <div>
-          <p>
+          <!-- <div align="left"> -->
             <button id="plus" type="button" class="btn btn-xs btn-success">+</button>
-
-            <button id="minus" type="button" class="btn btn-xs btn-warning">-</button>
-          </p>
-        </div>
+          <!-- </div> -->
+            <button id="minus" type="button" class="btn btn-xs btn-danger">-</button>
         <!--Plus/Minus button section-->
       </div>
       <!--Timer section-->

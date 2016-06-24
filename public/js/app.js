@@ -7,6 +7,7 @@ $(document).ready(function(){
   var resetBtn = $('#reset');
   var plusBtn = $('#plus');
   var minusBtn = $('#minus');
+  var timerText = $('#timerStateText');
   var countdown;
 
   start.on('click',startCountdown);
@@ -34,6 +35,8 @@ $(document).ready(function(){
   }
 
   function resetTimer(){
+    timerText.text("Work Time");
+
     minutes.text('25');
     seconds.text('00');
     stopCountdown();
@@ -45,6 +48,8 @@ $(document).ready(function(){
 
   function takeABreak(){
     // alert("take a break");
+    timerText.text("Break Time");
+
     minutes.text('05');
     seconds.text('00');
     // startCountdown();
